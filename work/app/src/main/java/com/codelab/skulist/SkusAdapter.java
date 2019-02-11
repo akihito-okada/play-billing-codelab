@@ -15,18 +15,18 @@
  */
 package com.codelab.skulist;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.codelab.GamePlayActivity;
-import com.codelab.sample.R;
 import com.codelab.billing.BillingProvider;
+import com.codelab.sample.R;
 import com.codelab.skulist.row.RowViewHolder;
 import com.codelab.skulist.row.SkuRowData;
 
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Adapter for a RecyclerView that shows SKU details for the app.

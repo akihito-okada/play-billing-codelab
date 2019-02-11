@@ -17,10 +17,11 @@
 package com.codelab;
 
 import android.content.SharedPreferences;
-import android.support.annotation.DrawableRes;
 import android.util.Log;
 
 import com.codelab.sample.R;
+
+import androidx.annotation.DrawableRes;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -61,7 +62,8 @@ public class MainViewController {
         return mTank >= TANK_MAX;
     }
 
-    public @DrawableRes int getTankResId() {
+    public @DrawableRes
+    int getTankResId() {
         int index = (mTank >= TANK_RES_IDS.length) ? (TANK_RES_IDS.length - 1) : mTank;
         return TANK_RES_IDS[index];
     }

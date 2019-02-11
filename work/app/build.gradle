@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion Integer.valueOf(project.TARGET_SDK_VERSION)
-    buildToolsVersion project.TOOLS_VERSION
 
     defaultConfig {
         applicationId project.APP_ID
@@ -28,8 +27,9 @@ android {
 }
 
 dependencies {
-    compile "com.android.support:appcompat-v7:$project.TOOLS_VERSION"
-    compile "com.android.support:cardview-v7:$project.TOOLS_VERSION"
-    compile "com.android.support:recyclerview-v7:$project.TOOLS_VERSION"
-    compile "com.android.support:support-annotations:$project.TOOLS_VERSION"
+    implementation "androidx.appcompat:appcompat:1.0.2"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "androidx.annotation:annotation:1.0.1"
+    implementation 'com.android.billingclient:billing:1.1'
 }

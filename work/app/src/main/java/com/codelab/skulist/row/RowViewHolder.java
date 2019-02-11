@@ -15,13 +15,14 @@
  */
 package com.codelab.skulist.row;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.codelab.sample.R;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * ViewHolder for quick access to row's views
